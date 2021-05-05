@@ -40,6 +40,10 @@ class _AuthenticationState extends State<Authentication> {
                   labelStyle: TextStyle(
                     color: Colors.black,
                   ),
+                  border: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  ),
                 ),
               ),
             ),
@@ -59,6 +63,10 @@ class _AuthenticationState extends State<Authentication> {
                   labelStyle: TextStyle(
                     color: Colors.black,
                   ),
+                  border: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  ),
                 ),
               ),
             ),
@@ -68,7 +76,7 @@ class _AuthenticationState extends State<Authentication> {
               height: 45,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15.0),
-                color: Colors.white,
+                color: Colors.black,
               ),
               child: MaterialButton(
                 onPressed: () async {
@@ -84,7 +92,7 @@ class _AuthenticationState extends State<Authentication> {
                     );
                   }
                 },
-                child: Text("Register"),
+                child: Text("Register", style: TextStyle(color: Colors.amber),),
               ),
             ),
             SizedBox(height: MediaQuery.of(context).size.height / 35),
@@ -93,7 +101,7 @@ class _AuthenticationState extends State<Authentication> {
               height: 45,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15.0),
-                color: Colors.white,
+                color: Colors.black,
               ),
               child: MaterialButton(
                   onPressed: () async {
@@ -108,7 +116,7 @@ class _AuthenticationState extends State<Authentication> {
                       );
                     }
                   },
-                  child: Text("Login")),
+                  child: Text("Login", style: TextStyle(color: Colors.amber),)),
             ),
           ],
         ),
